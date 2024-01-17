@@ -1,0 +1,45 @@
+{
+  "name": "authentication-demo",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "nodemon server/index.cjs",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoravur/authentication-demo.git"
+  },
+  "keywords": [
+    "express",
+    "react",
+    "authentication",
+    "signin"
+  ],
+  "author": "Zoravur Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoravur/authentication-demo/issues"
+  },
+  "homepage": "https://github.com/zoravur/authentication-demo#readme",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "prettier": "^3.1.1",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/?(*.)+(spec|test).[tj]s?(x)",
+      "**/?(*.)+(spec|test).mjs"
+    ],
+    "transform": {},
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    }
+  },
+  "dependencies": {}
+}
